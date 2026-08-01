@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\gemini-svg.svg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -123,3 +124,4 @@ D:\Web DEV\MyPortfolio\wwwroot\lib\jquery\dist\jquery.slim.js
 D:\Web DEV\MyPortfolio\wwwroot\lib\jquery\dist\jquery.slim.min.js
 D:\Web DEV\MyPortfolio\wwwroot\lib\jquery\dist\jquery.slim.min.map
 D:\Web DEV\MyPortfolio\wwwroot\lib\jquery\LICENSE.txt
+D:\Web DEV\MyPortfolio\wwwroot\gemini-svg.svg

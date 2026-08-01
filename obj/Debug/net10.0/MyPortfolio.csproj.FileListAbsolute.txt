@@ -96,3 +96,5 @@ D:\Web DEV\MyPortfolio\obj\Debug\net10.0\MyPortfolio.pdb
 D:\Web DEV\MyPortfolio\obj\Debug\net10.0\MyPortfolio.genruntimeconfig.cache
 D:\Web DEV\MyPortfolio\obj\Debug\net10.0\ref\MyPortfolio.dll
 D:\Web DEV\MyPortfolio\obj\Debug\net10.0\compressed\laik32afsc-{0}-iavdhxzit1-iavdhxzit1.gz
+D:\Web DEV\MyPortfolio\obj\Debug\net10.0\MyPortfolio.sourcelink.json
+D:\Web DEV\MyPortfolio\obj\Debug\net10.0\compressed\97riib1eer-{0}-8odn958vo8-8odn958vo8.gz

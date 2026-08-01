@@ -34,8 +34,8 @@ public class PortfolioService
                 Title="Portfolio Website",
                 Description="A personal Portfolio Website built with .NET core MVC and Boostrap.",
                 TechStack=new List<string>{".NET Core MVC","Bootsrap"},
-                GithubUrl="NULL",
-                LiveUrl="NULL"
+                GithubUrl="https://github.com/msalahudin441-wq/MyPortfolio.git",
+                LiveUrl="https://salahudinportfolio.runasp.net/"
 
                 }
             },
@@ -52,6 +52,14 @@ public class PortfolioService
                     Institution = "University Of Engineering & Technology,Lahore",
                     Period = "2025 - Present",
                     Description = "Focused on software engineering, database architectures, and web application development."
+                }
+                ,
+                 new Education
+                {
+                    Degree = "Intermediate In Computer Science",
+                    Institution = "Government Graduate College , Karor Lal Esan",
+                    Period = "2023 - 2025",
+                    Description = "Focused on basics of computer science and programming."
                 }
             }
         };

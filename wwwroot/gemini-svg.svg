@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Dark Grid Background -->
+  <rect width="512" height="512" rx="128" fill="#09090b"/>
+  
+  <!-- Subtle Border Line -->
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="none" stroke="#27272a" stroke-width="16"/>
+
+  <!-- Code Bracket Symbol </> -->
+  <path d="M160 200 L96 256 L160 312" fill="none" stroke="#ffffff" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M352 200 L416 256 L352 312" fill="none" stroke="#ffffff" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M280 160 L232 352" fill="none" stroke="#0070f3" stroke-width="36" stroke-linecap="round"/>
+</svg>
