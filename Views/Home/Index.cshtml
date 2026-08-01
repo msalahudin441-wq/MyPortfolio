@@ -1,0 +1,161 @@
+﻿@model MyPortfolio.Models.PortfolioViewModel
+@{
+    ViewData["Title"] = "Muhammad Salahuddin - Portfolio";
+}
+
+
+<section id="home" class="py-5 my-4">
+    <div class="row align-items-center g-5">
+       
+        <div class="col-lg-5">
+            <h1 class="display-4 fw-bold text-white mb-4" style="line-height: 1.05;">
+                Computer Scientist <br />
+                 &
+                <br />
+                Aspiring Software Engineer
+            </h1>
+            <div class="d-flex gap-3 mt-4">
+                <a href="#projects" class="btn btn-pill-light">View Work</a>
+                <a href="#contact" class="btn btn-pill-outline">Contact</a>
+            </div>
+        </div>
+
+      
+        <div class="col-lg-3 text-center">
+            <div class="dark-card p-5 d-flex align-items-center justify-content-center shadow-lg" style="height: 220px;">
+                <span class="fs-1 text-secondary opacity-75">&lt;/&gt;</span>
+            </div>
+        </div>
+
+        
+        <div class="col-lg-4">
+            <div class="d-flex flex-column gap-3 text-secondary fs-5">
+                <p class="m-0 text-light fw-medium">Full Stack Developer</p>
+                <p class="m-0">Database & Web Application Architect</p>
+                <p class="m-0">BS Computer Science</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ @* Tech Stack   *@
+<div class="tech-bar py-3 px-2 my-4 rounded-3">
+    <div class="d-flex justify-content-between align-items-center gap-4 text-secondary px-3">
+        <span>C#</span>
+        <span>.NET Core MVC</span>
+        <span>SQL </span>
+        <span>JavaScript</span>
+        <span>Bootstrap</span>
+        <span>HTML5 / CSS</span>
+        <span>Git</span>
+    </div>
+</div>
+
+ @* Projects Section  *@
+<section id="projects" class="py-5">
+    <div class="d-flex align-items-center justify-content-between border-bottom border-dark pb-3 mb-4">
+        <h2 class="fw-bold text-white m-0">Projects</h2>
+        <span class="badge bg-dark border border-secondary text-light rounded-pill fs-6 px-3">@Model.Projects.Count Projects</span>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var project in Model.Projects)
+        {
+            <div class="col">
+                <div class="dark-card h-100 p-4 d-flex flex-column">
+                    <h5 class="fw-bold text-white mb-2">@project.Title</h5>
+                    <p class="text-secondary small flex-grow-1">@project.Description</p>
+
+                    <div class="mb-3">
+                        @foreach (var tech in project.TechStack)
+                        {
+                            <span class="badge bg-dark border border-secondary text-light me-1 mb-1">@tech</span>
+                        }
+                    </div>
+
+                    <div class="d-flex gap-2 pt-3 border-top border-dark">
+                        <a href="@project.GithubUrl" target="_blank" class="btn btn-sm btn-pill-outline flex-fill text-center">
+                            GitHub
+                        </a>
+                        @if (!string.IsNullOrEmpty(project.LiveUrl))
+                        {
+                            <a href="@project.LiveUrl" target="_blank" class="btn btn-sm btn-pill-light flex-fill text-center">
+                                Live Demo
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+ @* Skills & Education Section  *@
+<div class="row my-5 g-4">
+     @* Skills  *@
+    <section id="skills" class="col-md-6">
+        <div class="dark-card h-100 p-4">
+            <h3 class="border-bottom border-dark pb-3 mb-4 fw-bold text-white">Skills</h3>
+            @foreach (var group in Model.Skills)
+            {
+                <div class="mb-4">
+                    <h6 class="fw-bold text-uppercase text-secondary small mb-2">@group.Category</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        @foreach (var item in group.Items)
+                        {
+                            <span class="badge bg-dark border border-secondary text-light px-3 py-2 fs-6">@item</span>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="col-md-6">
+        <div class="dark-card h-100 p-4">
+            <h3 class="border-bottom border-dark pb-3 mb-4 fw-bold text-white">Education</h3>
+            @foreach (var edu in Model.EducationList)
+            {
+                <div class="border-start border-3 border-light ps-3 mb-4">
+                    <h5 class="fw-bold text-white mb-1">@edu.Degree</h5>
+                    <div class="text-secondary small mb-2">@edu.Institution • <span class="text-light">@edu.Period</span></div>
+                    <p class="text-secondary small m-0">@edu.Description</p>
+                </div>
+            }
+        </div>
+    </section>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="dark-card p-5 rounded-3 my-5 text-center shadow">
+    <h2 class="fw-bold text-white mb-2">Let's Connect</h2>
+    <p class="text-secondary mb-4">Feel free to reach out directly through any of these platforms.</p>
+
+    <div class="row justify-content-center g-3">
+        <div class="col-md-4">
+            <div class="p-3 bg-dark border border-secondary rounded-3">
+                <i class="bi bi-envelope-at-fill"></i>
+                <br/>
+              
+                <a  href="mailto:msalahudin441@gmail.com" class="fw-bold text-white mb-1 href text-decoration-none">Email</a>
+                
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 bg-dark border border-secondary rounded-3">
+                <i class="bi bi-linkedin"></i>
+                <br />  
+               
+                <a href="https://linkedin.com/in/MSalahuddin441" target="_blank" class="fw-bold text-white mb-1 href text-decoration-none">LinkedIn</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 bg-dark border border-secondary rounded-3">
+                <i class="bi bi-github"></i>
+                <br/>
+                <a href="https://github.com/msalahudin441-wq" target="_blank" class="fw-bold text-white mb-1 href text-decoration-none">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>

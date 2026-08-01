@@ -1,0 +1,60 @@
+## Build and Compilation Outputs
+[Bb]in/
+[Oo]bj/
+[Lls]og/
+[Lls]ogs/
+[Tt]emp/
+[D2d]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+build/
+dist/
+
+## Visual Studio Files & User Settings
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.vsp
+*.vspx
+*.sap
+
+## Visual Studio Code Settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+## JetBrains Rider / Resharper
+.idea/
+*_ReSharper*/
+*.sln.DotSettings.user
+
+## Publish Outputs
+*.azurePubxml
+*.pubxml
+*.pubxml.user
+app.publish/
+
+## Secrets & Configuration
+appsettings.Development.json
+appsettings.Local.json
+*.secrets.json
+
+## Operating System System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Node.js / NPM (if using modern JS build tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
